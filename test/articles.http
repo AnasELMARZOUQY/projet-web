@@ -1,0 +1,41 @@
+### GET All Articles
+GET http://localhost:3000/api/v1/articles
+
+### GET 10 Articles
+
+GET http://localhost:3000/api/v1/articles?take=10
+
+### Get 10 Articles by skipping first 10
+
+GET http://localhost:3000/api/v1/articles?take=10&skip=10
+
+### GET All Articles by skipping first 10
+
+GET http://localhost:3000/api/v1/articles?skip=10
+
+
+### GET Article By ID 
+
+GET http://localhost:3000/api/v1/articles/101
+
+
+### ADD an article
+
+POST http://localhost:3000/api/v1/articles
+Content-Type: application/json
+
+{
+    "titre": "HTTP reboot pink Global",
+    "image": "http://loremflickr.com/640/480",
+    "contenu": "Et voluptatum eum explicabo veritatis sit dolore quod est omnis",
+    "authorId": 4,
+    "categorieArray" : [
+        9,
+        5
+    ]
+}
+
+
+### DELETE Article by Id
+
+DELETE http://localhost:3000/api/v1/articles/101

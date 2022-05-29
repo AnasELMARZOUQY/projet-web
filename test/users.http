@@ -1,0 +1,72 @@
+### GET All Users
+GET http://localhost:3000/api/v1/users
+
+### GET Users by Id
+
+GET http://localhost:3000/api/v1/users/2
+
+
+### ADD a new User
+
+POST http://localhost:3000/api/v1/users
+Content-Type: application/json
+
+{
+    "nom" : "Artemis",
+    "email" : "artemis@gmail.com",
+    "password" : "mt3uz"
+}
+
+### 
+
+POST http://localhost:3000/api/v1/users
+Content-Type: application/json
+
+{
+    "nom" : "Epsilome",
+    "email" : "epsilome@gmail.com",
+    "password" : "ezforepsigi2af"
+}
+
+
+
+### 
+
+POST http://localhost:3000/api/v1/users
+Content-Type: application/json
+
+{
+    "nom" : "Guren",
+    "email" : "guren@gmail.com",
+    "password" : "plat1raknade"
+}
+
+
+### 
+
+POST http://localhost:3000/api/v1/users
+Content-Type: application/json
+
+{
+    "nom" : "Miella",
+    "email" : "miella@gmail.com",
+    "password" : "uguysaregenius",
+    "role" : "ADMIN"
+}
+
+
+###
+
+DELETE http://localhost:3000/api/v1/users/4
+
+
+### PATCH a user
+
+PATCH http://localhost:3000/api/v1/users/3
+Content-Type: application/json
+
+{
+    "nom" : "Epsilome",
+    "email" : "epsilome@gmail.com",
+    "password" : "ezforepsigi2af"
+}

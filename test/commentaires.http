@@ -1,0 +1,25 @@
+
+### GET All comments from an article
+GET http://localhost:3000/api/v1/articles/3/comments
+
+
+### ADD a comment to an article
+POST http://localhost:3000/api/v1/articles/3/comments
+Content-Type: application/json
+
+{
+    "email" : "sky@walker.me",
+    "contenu" : "May the force be with you ! Always"
+}
+
+### DELETE a comment
+DELETE http://localhost:3000/api/v1/articles/3/comments/1062
+
+
+### UPDATE a comment
+PATCH http://localhost:3000/api/v1/articles/3/comments/1044
+Content-Type: application/json
+
+{
+    "contenu" : "May the force be with you ! Sometimes"
+}
